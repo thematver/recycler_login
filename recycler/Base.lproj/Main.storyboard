@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,193 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="recycler" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qmr-5f-zjp">
+                                <rect key="frame" x="67" y="728" width="280" height="51"/>
+                                <color key="backgroundColor" red="0.4285157919" green="0.75502544640000002" blue="0.32153618340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="Eab-dU-J0Q"/>
+                                    <constraint firstAttribute="height" constant="51" id="lwg-f3-aHV"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Войти">
+                                            <attributes>
+                                                <color key="NSColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <font key="NSFont" size="17" name="Exo2-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qhq-Ab-sXD"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="up8-Th-cDK">
+                                <rect key="frame" x="165.5" y="68" width="224.5" height="72"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOb-rr-QcE">
+                                <rect key="frame" x="89.5" y="810" width="235.5" height="28.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qql-Df-wwk">
+                                        <rect key="frame" x="0.0" y="0.0" width="98.5" height="28.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Нет аккаунта? ">
+                                                <attributes>
+                                                    <font key="NSFont" size="14" name="Exo2-Regular"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="onl-qV-L8m">
+                                        <rect key="frame" x="98.5" y="0.0" width="137" height="28.5"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Зарегистрироваться">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.4285157919" green="0.75502544640000002" blue="0.32153618340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="14" name="Exo2-Regular"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="T85-59-gJo">
+                                <rect key="frame" x="66.5" y="335.5" width="281" height="235.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOq-DX-E9r">
+                                        <rect key="frame" x="0.0" y="0.0" width="281" height="19"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Войти в систему:">
+                                                <attributes>
+                                                    <font key="NSFont" size="16" name="Exo2-Medium"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="VIs-ge-OJk">
+                                        <rect key="frame" x="0.0" y="76" width="281" height="72"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="f8F-fP-2ZN">
+                                                <rect key="frame" x="0.0" y="0.0" width="281" height="20"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="6g4-Cb-tjl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="ib0-Lv-lwt"/>
+                                                            <constraint firstAttribute="height" constant="20" id="t9P-Vs-ygp"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="e-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MO8-p3-ucF">
+                                                        <rect key="frame" x="41" y="0.0" width="240" height="20"/>
+                                                        <attributedString key="attributedText"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="K5a-hd-eXJ">
+                                                <rect key="frame" x="0.0" y="52" width="281" height="20"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="g16-2W-eKY" userLabel="Password Image">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="6aP-fx-89V"/>
+                                                            <constraint firstAttribute="width" constant="20" id="JxN-cb-Az4"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5tE-CH-6ZX">
+                                                        <rect key="frame" x="41" y="0.0" width="240" height="20"/>
+                                                        <attributedString key="attributedText"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="281" id="hQ0-dv-ZAh"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lv7-dY-RDz">
+                                        <rect key="frame" x="78" y="205" width="125" height="30.5"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Забыли пароль?">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.4285157919" green="0.75502544640000002" blue="0.32153618340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="16" name="Exo2-Regular"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="FOq-DX-E9r" firstAttribute="leading" secondItem="T85-59-gJo" secondAttribute="leading" id="Dqf-8M-vo5"/>
+                                </constraints>
+                            </stackView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ошибка авторизации" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSh-C5-etr">
+                                <rect key="frame" x="121.5" y="652.5" width="171.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="T85-59-gJo" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="7XV-2X-Yh0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qmr-5f-zjp" secondAttribute="bottom" constant="83" id="Bgr-y9-OSu"/>
+                            <constraint firstItem="XSh-C5-etr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Dyq-An-65e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="up8-Th-cDK" secondAttribute="trailing" constant="24" id="Gld-C5-LvM"/>
+                            <constraint firstItem="up8-Th-cDK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="I8n-Uu-dX9"/>
+                            <constraint firstItem="Qmr-5f-zjp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JMf-9c-Wr1"/>
+                            <constraint firstItem="T85-59-gJo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Mzc-Pv-kDf"/>
+                            <constraint firstItem="Qql-Df-wwk" firstAttribute="top" secondItem="Qmr-5f-zjp" secondAttribute="bottom" constant="31" id="mHg-Qu-fbA"/>
+                            <constraint firstItem="oOb-rr-QcE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="thh-nd-yL3"/>
+                            <constraint firstItem="Qmr-5f-zjp" firstAttribute="top" secondItem="XSh-C5-etr" secondAttribute="bottom" constant="55" id="xtB-Nm-Xkn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="MainView" destination="8bC-Xf-vdC" id="ybR-8s-Rdb"/>
+                        <outlet property="emailImage" destination="6g4-Cb-tjl" id="gbs-3R-hyn"/>
+                        <outlet property="emailTextField" destination="MO8-p3-ucF" id="eoO-TA-mCW"/>
+                        <outlet property="invalidLabel" destination="XSh-C5-etr" id="JVd-Do-0H4"/>
+                        <outlet property="passwordImage" destination="g16-2W-eKY" id="wpN-x2-7F1"/>
+                        <outlet property="passwordTextField" destination="5tE-CH-6ZX" id="nJI-Dn-Use"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="97.767857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="email" width="20" height="21"/>
+        <image name="logo" width="224.5" height="72"/>
+        <image name="password" width="17" height="24"/>
+    </resources>
 </document>
