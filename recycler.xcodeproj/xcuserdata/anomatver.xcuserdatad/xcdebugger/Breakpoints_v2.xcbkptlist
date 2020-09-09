@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B05E68E2-32AE-4D40-B475-EBA74756EA18"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5CC078FB-7FC4-484B-B6FB-D2E0DDA78919"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "recycler/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "5CC078FB-7FC4-484B-B6FB-D2E0DDA78919 - b1657e82609594ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recycler.ViewController.passwordImage.getter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "recycler"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anomatver/Desktop/recycler/recycler/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "5CC078FB-7FC4-484B-B6FB-D2E0DDA78919 - e19768fe64aaa0a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recycler.ViewController.passwordImage.setter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "recycler"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anomatver/Desktop/recycler/recycler/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "5CC078FB-7FC4-484B-B6FB-D2E0DDA78919 - f5c2886ec0e0a9b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recycler.ViewController.passwordImage.modify : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "recycler"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anomatver/Desktop/recycler/recycler/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  uuid = "5CC078FB-7FC4-484B-B6FB-D2E0DDA78919 - f8bae1c3d73b9ae7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recycler.ViewController.passwordImage.modify : Swift.Optional&lt;__C.UIImageView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "recycler"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anomatver/Desktop/recycler/recycler/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "5CC078FB-7FC4-484B-B6FB-D2E0DDA78919 - 1633c2ab825db9f2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recycler.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; recycler.ViewController"
+                  moduleName = "recycler"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anomatver/Desktop/recycler/recycler/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "257">
+               </Location>
+               <Location
+                  uuid = "5CC078FB-7FC4-484B-B6FB-D2E0DDA78919 - 85a4eeeb008432d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recycler.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;recycler.ViewController&gt;"
+                  moduleName = "recycler"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anomatver/Desktop/recycler/recycler/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "198">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
